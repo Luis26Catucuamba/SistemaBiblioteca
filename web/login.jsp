@@ -28,7 +28,7 @@
             <div class="col-lg-6">
                 <div class="card1 pb-5">
                     <div class="row">                      
-                        <img src="assets/img/log.png" class="logo"/>
+                        <img src="assets/img/bibliologo.png" class="logo"/>
                     </div>
                     <div class="row px-3 justify-content-center mt-4 mb-5 border-line banner banner_img">
                         <img src="assets/img/access_count.svg" class="image">

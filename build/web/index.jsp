@@ -16,11 +16,10 @@
         <header class="bg_animate">
             <div class="header_nav">
                 <di class="contenedor">
-                    <h1>Biblioteca</h1>
+                    <h1>BibliotecaINT</h1>
                     <nav>
                         <a href="index.jsp">Inicio</a>
-                        <a href="newjsp.jsp">Servicios</a>
-                        <a href="#">Contacto</a>                        
+                                               
                     </nav>
                 </di>                
             </div>
