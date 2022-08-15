@@ -15,32 +15,10 @@
            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
            <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet" type="text/css"/>    
-           
-           <script type="text/javascript">
-function mostrarPassword(){
-		var cambio = document.getElementById("txtPassword");
-		if(cambio.type == "password"){
-			cambio.type = "text";
-                        eye.style.opacity=0.8			
-		}else{
-			cambio.type = "password";
-                        eye.style.opacity=0.2			
-		}
-	};
-</script>
-
-<script>
-            const colorSwitch = document.querySelector('#switch input[type="checkbox"]');
-            function cambiaTema(ev){
-                if(ev.target.checked){
-                    document.documentElement.setAttribute('tema', 'dark');
-                } else {
-                    document.documentElement.setAttribute('tema', 'light');
-                }
-            }
-            colorSwitch.addEventListener('change', cambiaTema);
-        </script>
+           <script src="assets/js/mostrar.js" type="text/javascript"></script>
+           <script type="text/javascript"></script>
            
     </head>
    <body>
@@ -70,10 +48,9 @@ function mostrarPassword(){
                         <small class="or text-center">Acceder</small>
                         <div class="line"></div>
                     </div>
-                    <div class="row px-3  input-field">
-                        <label class="mb-1"><h6 class="mb-0 text-sm">Email </h6></label>
-                        <i class="fas fa-lock"></i>
-                        <input class="mb-4" type="text" name="email" placeholder="Ingrese email" required>
+                    <div class="row px-3 " >
+                        <label class="mb-1"><h6 class="mb-0 text-sm">Email </h6></label> <br> 
+                        <input  class="mb-4" type="text" name="email" placeholder="Ingrese email" required>
                     </div>
                     <div class="row px-3">
                         <label class="mb-1"><h6 class="mb-0 text-sm">Password</h6></label>
@@ -83,16 +60,15 @@ function mostrarPassword(){
                     <div class="row px-3 mb-4">
                         <div class="custom-control custom-checkbox custom-control-inline">
                             <input id="chk1" type="checkbox" name="chk" class="custom-control-input"> 
-
-                            <label for="chk1" class="custom-control-label text-sm">Remember me</label>
+                            <%-- <label for="chk1" class="custom-control-label text-sm">Remember me</label>--%>
                         </div>
                         <a href="#" class="ml-auto mb-0 text-sm">Forgot Password?</a>
                     </div>
                     <div class="row mb-3 px-3">
-                        <button type="submit" class="btn btn-blue text-center">Ingresar</button>
+                        <button type="submit" class="btn btn-blue text-center" onclick="inicio.jsp">Ingresar</button>
                     </div>
                     <div class="row mb-4 px-3">
-                        <small class="font-weight-bold">¿No tienes una cuenta?<a class="text-danger ">Registrate</a></small>
+                        <small class="font-weight-bold">¿No tienes una cuenta?<a  href="inicio.jsp"class="text-danger ">Registrate</a></small>
                     </div>
                     
             </div>
@@ -100,7 +76,7 @@ function mostrarPassword(){
                 </div>
             </div>
         </div>
-        <div class="bg-blue py-4">
+    <%--    <div class="bg-blue py-4">
             <div class="row px-3">
                 <small class="ml-4 ml-sm-5 mb-2">Copyright &copy; 2022. All rights reserved.</small>
                 <div class="social-contact ml-4 ml-sm-auto">
@@ -110,7 +86,7 @@ function mostrarPassword(){
                     <span class="fa fa-twitter mr-4 mr-sm-5 text-sm"></span>
                 </div>
             </div>
-        </div>
+</div>--%>
     </div>
 </div>
 
